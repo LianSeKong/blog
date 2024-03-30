@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'AliR';
+    src: url("./font/ttf/AlibabaPuHuiTi-2-55-Regular.ttf");
+}
+@font-face {
+    font-family: 'AliW';
+    src: url("./font/ttf/AlibabaPuHuiTi-2-85-Bold.ttf");
+}

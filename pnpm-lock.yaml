@@ -11,6 +11,9 @@ dependencies:
   vue:
     specifier: ^2.6.14
     version: 2.7.16
+  vue-router:
+    specifier: '3'
+    version: 3.6.5(vue@2.7.16)
 
 devDependencies:
   '@babel/core':
@@ -6747,6 +6750,14 @@ packages:
       watchpack: 2.4.1
       webpack: 5.91.0
     dev: true
+
+  /vue-router@3.6.5(vue@2.7.16):
+    resolution: {integrity: sha512-VYXZQLtjuvKxxcshuRAwjHnciqZVoXAjTjcqBTz4rKc8qih9g9pI3hbDjmqXaHdgL3v8pV6P8Z335XvHzESxLQ==}
+    peerDependencies:
+      vue: ^2
+    dependencies:
+      vue: 2.7.16
+    dev: false
 
   /vue-style-loader@4.1.3:
     resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==}
