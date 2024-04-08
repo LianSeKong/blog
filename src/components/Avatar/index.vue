@@ -15,13 +15,7 @@ export default {
         }
     },
     computed: {
-        boxWidth() {
-            return this.$props.width + 'px';
 
-        },
-        boxheight() {
-            return this.$props.height + 'px';
-        },
 
     },
     props: {
@@ -47,6 +41,8 @@ export default {
 
 .avatar {
     padding: 10px;
+    display: inline-block;
+
 }
 
 .avatar img {

@@ -1,10 +1,7 @@
 <template>
   <div class="slider">
-    <Avatar width="80" height="80"></Avatar>
+    <Avatar  width="80" height="80"></Avatar>
     <div class="slider-content">
-        
-
-
     </div>
   </div>
 </template>
@@ -19,3 +16,10 @@ export default {
   },
 };
 </script>
+
+<style>
+
+  .slider {}
+
+
+</style>
