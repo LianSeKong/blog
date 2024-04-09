@@ -41,19 +41,20 @@ export default {
 
 .avatar {
     padding: 10px;
-    display: inline-block;
-
+    display: block;
+    text-align: center;
 }
 
 .avatar img {
     display: block;
     object-fit: cover;
+    margin: 0 auto;
     margin-bottom: 5px;
     border-radius: 50%;
 }
 .description {
     font-size: 18px;
-    padding-left: 12px;
+
     display: block;
     color: #616161;
     font-family: 'AliW', Courier, monospace;
