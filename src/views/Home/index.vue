@@ -28,7 +28,7 @@ export default {
             content: 'imageLoader',
             type: 'error',
             duration: 3000,
-            container: this.$refs.imageLoader.$el
+            // container: this.$refs.imageLoader.$el
            
         })
     }

@@ -25,16 +25,16 @@ export default function(options = {}) {
     div.classList.add(`${styles['message-box--' + type]}`) 
 
     // 获取容器的计算样式    
-    if (getComputedStyle(container).position === 'static') {
+    if (container !== document.body && getComputedStyle(container).position === 'static') {
         container.style.position = 'relative'
     }
-    
     container.appendChild(div)
 
     // 移除message元素
     div.addEventListener('transitionend', () => {
         setTimeout(() => {
             div.remove()
+            
         }, duration)
     }, { once: true })
 
