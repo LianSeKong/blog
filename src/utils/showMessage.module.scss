@@ -1,0 +1,43 @@
+.message-box {
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    top: -100%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1) !important;
+    padding: 4px 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    font-weight: 700;
+    
+    &--info {
+        color: #fff;
+        
+        background-color: #26a69a;
+    }
+
+    &--warn {
+        background-color: #f2c037;
+        color: #000;
+    }
+
+    &--success {
+        background-color: #21ba45;
+        color: #f1f3f5;
+    }
+
+    &--error {
+        background-color: #c71f31;
+        color: #fff;
+    }
+
+    &--info {
+        background-color: #6b6b6b;
+        color: #ddd;
+    }
+}

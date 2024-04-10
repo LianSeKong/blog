@@ -38,66 +38,90 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-dog:before {
-    content: "\e976";
-  }
   
-  .icon-blog:before {
-    content: "\e660";
-  }
-  
-  .icon-article:before {
-    content: "\e69a";
-  }
-  
-  .icon-blog1:before {
-    content: "\e717";
-  }
-  
-  .icon-frog:before {
-    content: "\e661";
-  }
-  
-  .icon-frog1:before {
-    content: "\e722";
-  }
-  
-  .icon-apple-fill:before {
-    content: "\e881";
-  }
-  
-  .icon-github-fill:before {
-    content: "\e885";
-  }
-  
-  .icon-Dog:before {
-    content: "\e8dd";
-  }
-  
-  .icon-Frog:before {
-    content: "\e74d";
-  }
-  
-  .icon-home:before {
-    content: "\e6a3";
-  }
-  
-  .icon-bilibili-line:before {
-    content: "\e66d";
-  }
-  
-  .icon-frog2:before {
-    content: "\eb35";
-  }
-  
-  .icon-a-16_Frog:before {
-    content: "\e733";
-  }
-  
-  .icon-gmail:before {
-    content: "\e77c";
-  }
+.icon-about-me:before {
+  content: "\e626";
+}
 
+.icon-error:before {
+  content: "\e656";
+}
+
+.icon-warn:before {
+  content: "\e662";
+}
+
+.icon-wx:before {
+  content: "\e61e";
+}
+
+.icon-info:before {
+  content: "\e83d";
+}
+
+.icon-success:before {
+  content: "\e842";
+}
+
+.icon-qq:before {
+  content: "\eb36";
+}
+
+.icon-dog:before {
+  content: "\e976";
+}
+
+.icon-blog:before {
+  content: "\e660";
+}
+
+.icon-article:before {
+  content: "\e69a";
+}
+
+.icon-frog:before {
+  content: "\e661";
+}
+
+.icon-frog1:before {
+  content: "\e722";
+}
+
+.icon-apple-fill:before {
+  content: "\e881";
+}
+
+.icon-github-fill:before {
+  content: "\e885";
+}
+
+.icon-Dog:before {
+  content: "\e8dd";
+}
+
+.icon-Frog:before {
+  content: "\e74d";
+}
+
+.icon-home:before {
+  content: "\e6a3";
+}
+
+.icon-bilibili-line:before {
+  content: "\e66d";
+}
+
+.icon-frog2:before {
+  content: "\eb35";
+}
+
+.icon-a-16_Frog:before {
+  content: "\e733";
+}
+
+.icon-gmail:before {
+  content: "\e77c";
+}
 
   *,
 ::before,

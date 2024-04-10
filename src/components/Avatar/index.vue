@@ -1,7 +1,7 @@
 <template>
-    <div class="avatar" >
-        <img src="../../assets/avatar.png" :width="width" :height="height" alt="博客主头像">
-        <span class="description">{{description}}</span>
+    <div class="avatar">
+        <img :src="imgSrc" :width="width" :height="height" alt="博客主头像">
+        <span class="description">{{ description }}</span>
     </div>
 </template>
 
@@ -21,24 +21,27 @@ export default {
     props: {
         width: {
             required: true,
-            type: String
+            type: Number
         },
         height: {
             required: true,
-            type: String
+            type: Number
         },
         description: {
             type: String,
             default: 'Admin'
+        },
+        imgSrc: {
+            type: String,
+            default: 'https://w.wallhaven.cc/full/1p/wallhaven-1pm5p1.png'
         }
     }
 }
-
+// https://w.wallhaven.cc/full/vq/wallhaven-vqr66p.png
 </script>
 
 
 <style>
-
 .avatar {
     padding: 10px;
     display: block;
@@ -52,6 +55,7 @@ export default {
     margin-bottom: 5px;
     border-radius: 50%;
 }
+
 .description {
     font-size: 18px;
 
@@ -59,6 +63,4 @@ export default {
     color: #616161;
     font-family: 'AliW', Courier, monospace;
 }
-
-
 </style>
