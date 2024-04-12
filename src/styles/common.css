@@ -38,7 +38,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-up:before {
+    content: "\e7eb";
+  }
   
+  .icon-down:before {
+    content: "\e839";
+  }
 .icon-about-me:before {
   content: "\e626";
 }

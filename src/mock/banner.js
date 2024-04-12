@@ -2,7 +2,7 @@ import Mock from 'mockjs'
 
 
 Mock.mock('/api/banner', 'get', {
-    code: 403,
+    code: 200,
     msg: '',
     data: [
         {

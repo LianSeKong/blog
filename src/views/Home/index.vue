@@ -1,21 +1,25 @@
 <template>
-    <div class="home">
-        <ImageLoader 
+    <div class="home"  v-loading="true">
+        <!-- <ImageLoader 
             ref="imageLoader"
             :placeholder="imageLoaderSrc" 
             :imageSrc="imageLoaderSrc" 
             class="imageLoader"
-            />
+            /> -->
+
+        <Carouse></Carouse>
     </div>
 </template>
 
 
 <script>
-import ImageLoader from "@/components/ImageLoader";
+// import ImageLoader from "@/components/ImageLoader";
+import Carouse from './Carouse.vue';
 export default {
     name: 'MyHome',
     components: {
-        ImageLoader
+        // ImageLoader
+        Carouse
     },
     data() {
         return {
@@ -24,13 +28,13 @@ export default {
     },
     mounted() {
 
-        this.$notify({
-            content: 'imageLoader',
-            type: 'error',
-            duration: 3000,
-            // container: this.$refs.imageLoader.$el
+        // this.$notify({
+        //     content: 'imageLoader',
+        //     type: 'error',
+        //     duration: 3000,
+        //     // container: this.$refs.imageLoader.$el
            
-        })
+        // })
     }
 }
 
@@ -41,6 +45,7 @@ export default {
 
 .home {
     height: 100%;
+    position: relative;
 }
 .imageLoader {
     width: 100%;

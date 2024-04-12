@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import request from '@/utils/request'
+
 export default {
   name: 'App',
   beforeCreate() {
-    request.get('/banner').then(res => {
-      console.log(res);
-    })
+
   }
 }
 </script>

@@ -40,12 +40,11 @@ export default {
         loaded() {
 
         },
-
-
         handleLoader() {
             this.$refs.placeholder.style.opacity = 0
                 // this.$refs.placeholder.style.display = 'none'
                 this.originStyle.opacity = 1
+            this.$emit('load')                
         }
     }
 }
