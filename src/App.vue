@@ -5,12 +5,15 @@
 </template>
 
 <script>
-
+import {getBlogs} from '@/api/blog'
 export default {
   name: 'App',
-  beforeCreate() {
-
+  beforeMount() {
+    getBlogs().then(res => {
+      console.log(res);
+    })
   }
+
 }
 </script>
 

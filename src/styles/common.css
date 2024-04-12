@@ -19,6 +19,11 @@ body {
     src: url("./font/ttf/AlibabaPuHuiTi-2-85-Bold.ttf");
 }
 
+@font-face {
+  font-family: 'AliM';
+  src: url("./font/ttf/AlibabaPuHuiTi-2-65-Medium.ttf");
+}
+
 
 /* Logo 字体 */
 @font-face {

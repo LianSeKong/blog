@@ -4,7 +4,7 @@
             :imageSrc="imageSrc" 
             :placeholder="placeholder"
             @load="handleLoad"
-            v-loading="true"
+           
             v-if="lazy"
 
             ></ImageLoader>
