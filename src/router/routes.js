@@ -53,6 +53,16 @@ export default [
         }
       },
       {
+        path: "articles/detail/:id",
+        name: 'category',
+        component: () => import("@/views/Articles/blogDetail.vue"),
+        meta: {
+          icon: 'article',
+          title: '文章详情',
+          isShow: false
+        }
+      },
+      {
         path: "message_board",
         name: 'message_board',
         component: () => import("@/views/MessageBoard"),

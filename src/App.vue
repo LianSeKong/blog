@@ -5,18 +5,9 @@
 </template>
 
 <script>
-import { getComments, getBlog } from '@/api/blog'
-export default {
-  name: 'App',
-  beforeMount() {
-    getComments(1).then(res => {
-      console.log(res);
-    })
 
-    getBlog(1).then(res => {
-      console.log(res);
-    })
-  }
+export default {
+  name: 'App'
 
 }
 </script>

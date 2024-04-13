@@ -29,6 +29,43 @@ export default {
             }
         }
     },
+    watch: {
+        $route: {
+            handler(newR) {
+                const item = newR
+                this.typeList = this.typeList.map(
+                el => {
+                    if (el.id === item.id) {
+                        el.isSelected = true
+                    } else {
+                        el.isSelected =false
+                    }
+                    return el;
+                }
+            )
+            if (item.id === -1) {
+                    this.$router.push({
+                        name: 'article',
+                        query: {
+                            limit: this.routeInfo.limit,
+                            page: this.routeInfo.page,
+                        }
+                    })
+                } else {
+                    this.$router.push({
+                        name: 'category',
+                        query: {
+                            limit: this.routeInfo.limit,
+                            page: this.routeInfo.page,
+                        },
+                        params: {
+                            id: item.id
+                        }
+                    })
+                }
+            }
+        }
+    },
     beforeMount() {
         getBlogType().then(res => {
             const total = res.data.data.reduce((pre, cur) => {
