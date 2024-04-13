@@ -33,7 +33,7 @@ export default {
         },
         imgSrc: {
             type: String,
-            default: 'https://w.wallhaven.cc/full/1p/wallhaven-1pm5p1.png'
+            default: 'https://img.icons8.com/stickers/200/monster-face.png'
         }
     }
 }

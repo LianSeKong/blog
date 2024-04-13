@@ -5,7 +5,7 @@ import router from './router'
 import './styles/common.css'
 import { showMessage } from './utils'
 import './mock'
-
+import './quasar'
 // 自定义指令
 import loading from './directives/loading'
 

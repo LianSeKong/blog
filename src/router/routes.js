@@ -20,12 +20,36 @@ export default [
       },
       {
         path: "articles",
-        name: 'articles',
+        name: 'article',
         component: () => import("@/views/Articles"),
+        props($route){
+          return {
+            page: +$route.query.page || 1,
+            limit: +$route.query.limit || 10,
+            id: +$route.params.id || -1
+          }
+        },
         meta: {
           icon: 'article',
           title: '文章',
           isShow: true
+        }
+      },
+      {
+        path: "articles/cate/:id",
+        name: 'category',
+        component: () => import("@/views/Articles"),
+        props($route){
+          return {
+            page: +$route.query.page || 1,
+            limit: +$route.query.limit || 10,
+            id: +$route.params.id || -1
+          }
+        },
+        meta: {
+          icon: 'article',
+          title: '文章',
+          isShow: false
         }
       },
       {

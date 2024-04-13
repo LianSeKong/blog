@@ -8,6 +8,8 @@
 
 <script>
 import Avatar from '@/components/Avatar'
+import qqSrc from '@/assets/qq.jpg'
+import wxSrc from '@/assets/wx.png'
 import Contact from '../Contact'
 import Menu from '../Menu'
 export default {
@@ -24,25 +26,25 @@ export default {
           desc: '599820462@qq.com',
           iconName: 'github-fill',
           iconSize: 30,
-          imgSrc: 'https://w.wallhaven.cc/full/we/wallhaven-werdv6.png'
+          imgSrc: wxSrc
         },
         {
           desc: 'liansekong@gmail.com',
           iconName: 'gmail',
           iconSize: 30,
-          imgSrc: 'https://w.wallhaven.cc/full/rr/wallhaven-rrz76w.jpg'
+          imgSrc: wxSrc
         },
         {
           desc: '858247021',
           iconName: 'qq',
           iconSize: 30,
-          imgSrc: 'https://w.wallhaven.cc/full/rr/wallhaven-rrz76w.jpg'
+          imgSrc: qqSrc
         },
         {
           desc: 'zzdqlpf',
           iconName: 'wx',
           iconSize: 30,
-          imgSrc: 'https://w.wallhaven.cc/full/rr/wallhaven-rrz76w.jpg'
+          imgSrc: wxSrc
         }
       ],
     }
